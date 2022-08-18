@@ -3,14 +3,14 @@ package com.springboot.spring.controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.springboot.spring.service.userService;
+import com.springboot.spring.helloworld.helloWorld;
 
 @RestController
-public class User {
-    private userService service = new userService();
-    
+public class Hello {
+    private helloWorld hello = new helloWorld();
+
     @GetMapping("/hello")
-    public String hello() {
-        return service.hello();
+    public String sayHello() {
+        return hello.hello();
     }
 }
