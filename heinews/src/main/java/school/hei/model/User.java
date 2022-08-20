@@ -16,16 +16,16 @@ import lombok.*;
 public class User implements Serializable{
     @Id 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
-    @Column(name = "firs_name", nullable = false, length = 50)
+    @Column(nullable = false, length = 50)
     private String firstName;
 
-    @Column(name = "last_name", nullable = false, length = 50)
+    @Column(nullable = false, length = 50)
     private String lastName;
 
-    @Column(name = "user_name", length = 100)
-    private String username;
+    @Column(length = 100)
+    private String userName;
 
     @Column(unique = true)
     private String email;
