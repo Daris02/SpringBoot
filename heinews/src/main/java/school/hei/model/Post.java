@@ -11,7 +11,7 @@ import lombok.*;
 @ToString
 @EqualsAndHashCode
 @Entity
-@Table
+@Table(name = "T_post")
 public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

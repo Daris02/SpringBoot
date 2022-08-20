@@ -12,7 +12,7 @@ import lombok.*;
 @ToString
 @EqualsAndHashCode
 @Entity //JPA pour le rendre " CREATE TABLE "
-@Table(name = "\"user\"") //JPA
+@Table(name = "T_user") //JPA
 public class User implements Serializable{
     @Id 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
